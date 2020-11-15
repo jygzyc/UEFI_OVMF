@@ -1,0 +1,1 @@
+D:\software\qemu\qemu-system-x86_64.exe -drive file=OVMF.fd,if=pflash,format=raw,unit=0,readonly=on -drive file=fat:rw:.\hda-contents\,media=disk,if=virtio,format=raw -m 512 -machine q35,smm=on -nodefaults -vga std -global driver=cfi.pflash01,property=secure,value=on -global ICH9-LPC.disable_s3=1
